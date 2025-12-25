@@ -1,5 +1,5 @@
 
-
+//merge
 /**
  * Representasi data transaksi Barber Pro.
  * Mengimplementasikan Comparable untuk fitur sorting default.
