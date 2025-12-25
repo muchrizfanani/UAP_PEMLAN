@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BarberApp/BarberApp.iml" filepath="$PROJECT_DIR$/BarberApp/BarberApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/UAP_PEMLAN.iml" filepath="$PROJECT_DIR$/.idea/UAP_PEMLAN.iml" />
     </modules>
   </component>
