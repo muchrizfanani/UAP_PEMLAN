@@ -22,7 +22,7 @@ public class BarberFrame extends JFrame {
     private final Color COLOR_WHITE = new Color(255, 255, 255);
 
     private JTextField txtNama = createGoldTextField();
-    private JComboBox<String> cbLayanan = new JComboBox<>(new String[]{"Gentleman Cut", "Beard Sculpt", "Premium Spa"});
+    private JComboBox<String> cbLayanan = new JComboBox<>(new String[]{"Haircut", "Hair Styling", "Hair Coloring"});
     private JTextField txtHarga = createGoldTextField();
     private DefaultTableModel tableModel;
     private JTable table;
@@ -229,9 +229,9 @@ public class BarberFrame extends JFrame {
     // LOGIKA SORTING
     private void applySorting(int criteria) {
         switch (criteria) {
-            case 0 -> Collections.sort(listData); // Berdasarkan Comparable (Terbaru)
-            case 1 -> listData.sort(Comparator.comparing(Transaksi::getNama)); // A-Z Nama
-            case 2 -> listData.sort(Comparator.comparingDouble(Transaksi::getHarga).reversed()); // Harga Termahal
+            case 0 -> Collections.sort(listData);
+            case 1 -> listData.sort(Comparator.comparing(Transaksi::getNama));
+            case 2 -> listData.sort(Comparator.comparingDouble(Transaksi::getHarga).reversed());
         }
         refreshTable();
     }
